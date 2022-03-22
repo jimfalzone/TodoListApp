@@ -1,0 +1,1 @@
+let action = prompt("What would you like to do?");
