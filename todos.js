@@ -13,11 +13,11 @@ while (action != 'quit') {
             console.log(todolist);
             break;
         case 'list':
-            console.log("you chose list");
-            console.log(todo);
-            for (let i = 0; i <= todo.length; i++) {
+            // console.log("you chose list");
+            // console.log(todo);
+            for (let i = 0; i <= (todo.length - 2); i++) {
                 console.log("**********")
-                console.log((i+1), todolist[i])
+                console.log((i+1) + ": " + todolist[i])
                 console.log("**********")
             }
             break;
