@@ -1,6 +1,7 @@
 let todo = [];
 let action = prompt("What would you like to do?");
-let todolist = []
+let todolist = [];
+let deleteindex = '';
 
 while (action != 'quit') {
 
@@ -15,14 +16,16 @@ while (action != 'quit') {
         case 'list':
             // console.log("you chose list");
             // console.log(todo);
+            console.log("**********")
             for (let i = 0; i <= (todo.length - 2); i++) {
-                console.log("**********")
                 console.log((i+1) + ": " + todolist[i])
-                console.log("**********")
             }
+            console.log("**********")
             break;
         case 'delete':
             console.log("you chose delete")
+            deleteindex = prompt("Enter the index of the item you want to delete.")
+            todolist.splice((deleteindex-1), 1);
             break;
         default: 
             console.log('sorry, that is not a valid choice, please try again');
